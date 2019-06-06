@@ -9,7 +9,7 @@ def report(data):
         return df[col].sort_values(ascending = False)[1:6]#.index
     while True:
         try:
-            name = input("¿Que videojuego te gusta? ")
+            name = input("¿Qué videojuego te gusta? ")
             games = get_5(data, name)
             break
         except KeyError:  
